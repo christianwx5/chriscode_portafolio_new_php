@@ -202,7 +202,7 @@ $(document).ready(function() {
 
 
 <head>
-
+ 
 <!--codigo para el stilo de la pagina de proyectos -->
 
     <link rel="profile" href="https://gmpg.org/xfn/11">
