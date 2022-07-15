@@ -1,0 +1,476 @@
+
+
+<style>
+
+  .margen {
+    
+    padding: 18px;
+  }
+
+  .Efecto_sobrepuesto2 {
+        height: 100%;
+        
+        background: #ffffffd9;
+    }
+
+    #fondo-menu2 {
+        background: url(imagen/relieve.jpg);
+        padding: 3px;
+    }
+
+    #fondo-menu3 {
+        background: url(imagen/relieve.jpg);
+        padding: 4px;
+    }
+
+    div#fondo-portafolio {
+      position: initial;;
+    }
+</style>
+
+<style>
+  @media (max-width:991px){
+    .AdaptMedia {
+    top: -15px;
+    }
+
+    .AdaptMedia2 {
+    top: 0px;
+    }
+    
+  }
+
+  @media (max-width:767px){
+    .AdaptMedia3 {
+    width: 100%;
+    }
+  }
+  
+</style>
+
+<style type="text/css">
+  img.tg-item-image{height:170px}
+  .tg-item-media-inner:after{content:'';background:#f5f5f5;position:absolute;width:calc(100% - 50px);border-radius:3px;height:10px;top:10px;left:40px}
+  .tg-item-media-inner:before{content:'';color:#bbb;width:100%;height:30px;padding:0 8px;display:block;font-size:20px;line-height:28px;text-align:left;background-image:url('../../wp-content/uploads/2018/04/dots.html');background-position:left center;background-repeat:no-repeat;background-color:#272727}
+  .tg-item-media-inner:not(.no-media-poster){overflow:hidden;outline:#272727 solid 1px}
+</style>
+
+<!-- Mirrored from brando.themezaa.com/personal/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Aug 2020 21:42:32 GMT -->
+
+      <!-- Util para portafolio -->
+      <!--Ñ[AFecta en los margenes]>
+<link rel='stylesheet' id='crane-style-main-css' href='css/style-main.min43c6.css?ver=1.4.8.2' type='text/css' media='all' />
+     <![Afecta Fin]-->
+
+
+<script type="text/javascript" src='js/ultimate.minb3be.js?ver=3.18.0'></script>
+
+<link rel='stylesheet' id='redux-google-fonts-crane_options-css' href='css/estilo1.css' type='text/css' media='all' />
+
+<script src="js/rocket-loader.min.js" data-cf-settings="4321cc7462fa17f084085127-|49" defer=""></script>
+<script type="4321cc7462fa17f084085127-text/javascript" src='js/frontend-bundle.min43c6.js?ver=1.4.8.2'></script>
+
+
+  <!-- Util para portafolio Fin-->
+
+
+
+
+
+  <section id="portfolio" class="gutter-medium " style="border-bottom: 1px solid #e5e5e5;">
+    
+        <div class="row margen">
+          <div class="container">
+          <div class="wpb_column brando-column-container  vc_col-sm-12 vc_col-md-12 vc_col-xs-12 xs-text-center margin-six-bottom xs-margin-ten-bottom" data-front-class="brando-column-container  xs-text-center margin-six-bottom xs-margin-ten-bottom" >
+            <div class="vc-column-innner-wrapper">
+                <div class="wpd-innner-wrapper">
+                    <h4 class="brando-remove-frontend-editor-top alt-font  black-text heading-style11 ">Portafolio</h4>
+                </div>
+            </div>
+        </div>
+      </div>
+  
+  <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill" id="fondo-portafolio"><div class="vc_column-inner vc_custom_1556536597224"><div class="wpb_wrapper">
+    <div class="wpb_raw_code wpb_raw_js">
+    <div class="wpb_wrapper">
+    <script type="4321cc7462fa17f084085127-text/javascript">
+    (function($) {
+      "use strict";
+      $(document).ready(function() {
+        var $grid = $(".ct-promo-grid").isotope({
+          // options
+          itemSelector: ".ct-promo-grid-item",
+          percentPosition: true,
+          layoutMode: "fitRows"
+        });
+    
+        $grid.imagesLoaded().progress(function() {
+    console.log('hi');
+          $grid.isotope("layout");
+        });
+    
+        function toggleVisibility() {
+          if (window.matchMedia(`(max-width: 1025px)`).matches) {
+            $(".filters-select-group__wraper").removeClass("hidden");
+            $(".filters-button-group").addClass("hidden");
+    
+            // bind filter on select change
+            $(".filters-select-group").on("change", function() {
+              // get filter value from option value
+              var filterValue = this.value;
+              // use filterFn if matches value
+              $grid.isotope({ filter: filterValue });
+            });
+          } else {
+            $(".filters-select-group__wraper").addClass("hidden");
+            $(".filters-button-group").removeClass("hidden");
+    
+            // bind filter button click
+            $(".filters-button-group").on("click", "button", function() {
+              var filterValue = $(this).attr("data-filter");
+              // use filterFn if matches value
+              $grid.isotope({ filter: filterValue });
+            });
+    
+            // change is-checked class on buttons
+            $(".button-group").each(function(i, buttonGroup) {
+              var $buttonGroup = $(buttonGroup);
+              $buttonGroup.on("click", "button", function() {
+                $buttonGroup.find(".is-checked").removeClass("is-checked");
+                $(this).addClass("is-checked");
+              });
+            });
+          }
+        }
+    
+        toggleVisibility();
+    
+        $(window).resize(
+          _.debounce(function() {
+            toggleVisibility();
+          }, 100)
+        );
+      });
+    })(jQuery);
+    
+    
+    </script>
+
+    
+    </div>
+    </div>
+    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+    <div class="wpb_wrapper">
+    <div class="ct-sorter">
+
+    <div class="button-group filters-button-group menu-item" id="fondo-menu2">
+      <div class="Efecto_sobrepuesto2">
+    <button class="button menu-item is-checked" data-filter="*"><a class="menu-item-a">Todo</a></button>
+    <button class="button menu-item" data-filter=".a"><a class="menu-item-a">Web</a></button>
+    <button class="button menu-item" data-filter=".b"><a class="menu-item-a">Programas</a></button>
+    <button class="button menu-item" data-filter=".c"><a class="menu-item-a">Apps de Teléfono</a></button>
+    <button class="button menu-item" data-filter=".d"><a class="menu-item-a">Juegos</a></button>
+    </div>
+    </div>
+
+    <div class="filters-select-group__wraper menu-item" id="fondo-menu3">
+      <div class="Efecto_sobrepuesto2">
+    <select class="filters-select-group" name="filters-select-group" id="filters-select-group" style="margin: 0 0 0px 0;">
+      <option value="*">Todo</option>
+    <option value=".a">Web</option>
+     <option value=".b">Programas</option>
+    <option value=".c">Apps de Teléfono</option>
+    <option value=".d">Juegos</option>
+    </select>
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+    
+    </div>
+  </div>
+    <div class="ct-promo-grid">
+
+      <div class="ct-promo-grid-item b" data-category="b">
+
+        <!--y aca-->
+        <div class="gallery-img">
+
+          <div class="tg-grid-sizer">
+
+          </div>
+          <div class="tg-gutter-sizer">
+          </div>
+        <div class="<!--vc_row wpb_row vc_row-fluid vc_custom_1525276175315  padding-lg-80b padding-sm-60b padding-xs-40b-->">
+          <!--Aca-->
+          <article class=" tg-landing f18" data-row="1" data-col="1">
+            <div class="tg-item-inner">
+                <div class="tg-item-media-holder tg-light">
+                    <div class="tg-item-media-inner">
+                        <img class="tg-item-image" alt="" width="400" height="1807" src="imagen/runejarvis400w.jpg">
+                    </div>
+                    <div class="tg-item-media-content1 ">
+                        <a class="tg-element-absolut tg-element-above" target="" href="?num_proy=1">
+                        </a>
+                    </div>
+                </div>
+                <div class="tg-item-content-holder tg-dark image-format" data-position="bottom">
+                    <h4 class="tg-item-title tg-element-3">
+                        <a target="" href="?num_proy=1">Rune Jarvis</a>
+                    </h4>
+                    <div class="tg-item-clear"></div>
+                </div>
+            </div>
+        </article>
+        <!--hasta aca-->
+            </div>
+          </div>
+        <!--y aca Fin-->
+
+
+      </div>
+
+      <div class="ct-promo-grid-item a b" data-category="a" data-category="b">
+
+        <!--y aca-->
+        <div class="gallery-img">
+        
+        
+            
+          <div class="<!--vc_row wpb_row vc_row-fluid vc_custom_1525276175315  padding-lg-80b padding-sm-60b padding-xs-40b-->">
+              
+
+              <div class="tg-grid-sizer">
+
+              </div>
+              <div class="tg-gutter-sizer">
+
+              </div>
+                  <!--Aca-->
+                  <article class=" tg-landing f18" data-row="1" data-col="1">
+                      <div class="tg-item-inner">
+                          <div class="tg-item-media-holder tg-light">
+                              <div class="tg-item-media-inner">
+                                  <img class="tg-item-image" alt="" width="400" height="1807" src="imagen/Manpresa_roll_400w.jpg">
+                              </div>
+                              <div class="tg-item-media-content1 ">
+                                  <a class="tg-element-absolute tg-element-above" target="" href="?num_proy=2">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="tg-item-content-holder tg-dark image-format" data-position="bottom">
+                              <h4 class="tg-item-title tg-element-3">
+                                  <a target="" href="?num_proy=2">Manpresa Web</a>
+                              </h4>
+                              <div class="tg-item-clear"></div>
+                          </div>
+                      </div>
+                  </article>
+                  <!--hasta aca-->
+
+          </div>
+          
+      
+          </div>
+
+          <!--y aca Fin-->
+      </div>
+
+    <div class="ct-promo-grid-item b" data-category="b">
+
+      <!--y aca-->
+        <div class="gallery-img">
+          
+          
+              
+          <div class="<!--vc_row wpb_row vc_row-fluid vc_custom_1525276175315  padding-lg-80b padding-sm-60b padding-xs-40b-->">
+              
+
+              <div class="tg-grid-sizer">
+
+              </div>
+              <div class="tg-gutter-sizer">
+
+              </div>
+                  <!--Aca-->
+                  <article class=" tg-landing f18" data-row="1" data-col="1">
+                      <div class="tg-item-inner">
+                          <div class="tg-item-media-holder tg-light">
+                              <div class="tg-item-media-inner">
+                                  <img class="tg-item-image" alt="" width="400" height="1807" src="imagen/seguro_social400w.jpg">
+                              </div>
+                              <div class="tg-item-media-content1 ">
+                                  <a class="tg-element-absolute tg-element-above" target="" href="?num_proy=3">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="tg-item-content-holder tg-dark image-format" data-position="bottom">
+                              <h4 class="tg-item-title tg-element-3">
+                                  <a target="" href="?num_proy=3">Ambulatorio IVSS</a>
+                              </h4>
+                              <div class="tg-item-clear"></div>
+                          </div>
+                      </div>
+                  </article>
+                  <!--hasta aca-->
+
+          </div>
+              
+          
+        </div>
+
+      <!--y aca Fin-->
+    </div>
+
+
+    <div class="ct-promo-grid-item a" data-category="a">
+      <!--y aca-->
+          <div class="gallery-img">
+            
+            
+                
+            <div class="<!--vc_row wpb_row vc_row-fluid vc_custom_1525276175315  padding-lg-80b padding-sm-60b padding-xs-40b-->">
+                
+
+                <div class="tg-grid-sizer">
+
+                </div>
+                <div class="tg-gutter-sizer">
+
+                </div>
+                    <!--Aca-->
+                    <article class=" tg-landing f18" data-row="1" data-col="1">
+                        <div class="tg-item-inner">
+                            <div class="tg-item-media-holder tg-light">
+                                <div class="tg-item-media-inner">
+                                    <img class="tg-item-image" alt="" width="400" height="1807" src="imagen/Lodeurciuoli400w.jpg">
+                                </div>
+                                <div class="tg-item-media-content1 ">
+                                    <a class="tg-element-absolute tg-element-above" target="" href="?num_proy=4">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tg-item-content-holder tg-dark image-format" data-position="bottom">
+                                <h4 class="tg-item-title tg-element-3">
+                                    <a target="" href="?num_proy=4">Lodeurciuoli</a>
+                                </h4>
+                                <div class="tg-item-clear"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <!--hasta aca-->
+
+            </div>
+            
+        
+        </div>
+        <!--y aca Fin-->
+    </div>
+
+
+    <div class="ct-promo-grid-item b c" data-category="b" data-category="c">
+      <!--y aca-->
+      <div class="gallery-img">
+        
+        
+            
+        <div class="<!--vc_row wpb_row vc_row-fluid vc_custom_1525276175315  padding-lg-80b padding-sm-60b padding-xs-40b-->">
+            
+
+            <div class="tg-grid-sizer">
+
+            </div>
+            <div class="tg-gutter-sizer">
+
+            </div>
+                <!--Aca-->
+                <article class=" tg-landing f18" data-row="1" data-col="1">
+                    <div class="tg-item-inner">
+                        <div class="tg-item-media-holder tg-light">
+                            <div class="tg-item-media-inner">
+                                <img class="tg-item-image" alt="" width="400" height="1807" src="imagen/Autolavado_roll400w.jpg">
+                            </div>
+                            <div class="tg-item-media-content1 ">
+                                <a class="tg-element-absolute tg-element-above" target="" href="?num_proy=5">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tg-item-content-holder tg-dark image-format" data-position="bottom">
+                            <h4 class="tg-item-title tg-element-3">
+                                <a target="" href="?num_proy=5">Auto Control</a>
+                            </h4>
+                            <div class="tg-item-clear"></div>
+                        </div>
+                    </div>
+                </article>
+                <!--hasta aca-->
+
+        </div>
+        
+    
+      </div>
+      <!--y aca Fin-->
+    </div>
+
+
+    <div class="ct-promo-grid-item b" data-category="b">
+      <!--y aca-->
+      <div class="gallery-img">
+        
+        
+            
+        <div class="<!--vc_row wpb_row vc_row-fluid vc_custom_1525276175315  padding-lg-80b padding-sm-60b padding-xs-40b-->">
+            
+
+            <div class="tg-grid-sizer">
+
+            </div>
+            <div class="tg-gutter-sizer">
+
+            </div>
+                <!--Aca-->
+                <article class="tg-landing f18" data-row="1" data-col="1">
+                    <div class="tg-item-inner">
+                        <div class="tg-item-media-holder tg-light">
+                            <div class="tg-item-media-inner">
+                                <img class="tg-item-image" alt="" width="400" height="1807" src="imagen/rami_make_roll400w.jpg">
+                            </div>
+                            <div class="tg-item-media-content11 ">
+                                <a class="tg-element-absolute tg-element-above" target="" href="?num_proy=6">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tg-item-content-holder tg-dark image-format" data-position="bottom">
+                            <h4 class="tg-item-title tg-element-3">
+                                <a target="" href="?num_proy=6">Rami Make</a>
+                            </h4>
+                            <div class="tg-item-clear"></div>
+                        </div>
+                    </div>
+                </article>
+                <!--hasta aca-->
+
+        </div>
+        
+    
+      </div>
+      <!--y aca Fin-->
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div></div>
+
+
+  </div></div>
+
+  <style id="woocommerce-inline-inline-css" type="text/css">
+    .tg-item-image { height: 268px; }
+</style>
+</section>
